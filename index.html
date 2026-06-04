@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBridge - Buy, Sell & Rent Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            background-color: #111;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Hero Background Section with Dark Overlay */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            /* Using a high-quality bookshelf image as placeholder */
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                        url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1920') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header / Navbar Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Recreating the light blue accent color on "Bridge" */
+        .logo span {
+            color: #46cdff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        /* Main Center Content Container */
+        .content-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 40px; /* Offset for header spacing */
+        }
+
+        /* Main Heading */
+        .content-container h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            max-width: 600px;
+            letter-spacing: -0.5px;
+        }
+
+        /* Subtext / Description */
+        .content-container p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 500px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        /* Button Container & Individual Button Styling */
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 12px 28px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Light Blue "Browse Books" Button */
+        .btn-browse {
+            background-color: #46cdff;
+            color: #000;
+            border: 2px solid #46cdff;
+        }
+
+        .btn-browse:hover {
+            background-color: #2bbfff;
+            border-color: #2bbfff;
+        }
+
+        /* Transparent Outline "Sell a Book" Button */
+        .btn-sell {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn-sell:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .content-container h1 {
+                font-size: 36px;
+            }
+            header {
+                padding: 20px 5%;
+            }
+            nav ul {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-section">
+        <header>
+            <a href="#" class="logo">Book<span>Bridge</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-container">
+            <h1>Buy, Sell & Rent<br>Books Easily</h1>
+            <p>Your open library where students can share, rent, and discover affordable books.</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-browse" onclick="alert('Browsing books...')">Browse Books</a>
+                <a href="#" class="btn btn-sell" onclick="alert('Redirecting to sell page...')">Sell a Book</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+```
